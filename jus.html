@@ -12,6 +12,29 @@
       font-family: 'Poppins', sans-serif;
       height: 100vh; /* Memastikan body menggunakan 100% tinggi viewport */
     }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 10px; /* Lebar scrollbar horizontal */
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #2f855a; /* Warna scrollbar */
+      border-radius: 10px; /* Membuat ujung scrollbar melengkung */
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f7fafc; /* Warna track scrollbar */
+      border-radius: 10px;
+    }
+    
+    .custom-scrollbar {
+      scrollbar-color: #2f855a #f7fafc; /* Untuk Firefox */
+      scrollbar-width: thin; /* Untuk Firefox: scrollbar lebih kecil */
+    }
+    .custom-scrollbar::-webkit-scrollbar-button {
+      display: none; /* Menghilangkan panah scrollbar */
+    }
+    
   </style>
 </head>
 <body class="bg-[#f0eada]">
@@ -59,10 +82,230 @@
         </div>
     </div>
     <div class="flex-1 px-20">
-        <div class="bg-[#ffcb44] h-full rounded-lg">
+        <div class="bg-[#ffcb44] h-full rounded-lg relative px-8 py-5">
+          <div class="absolute top-4 left-4 grid grid-cols-2 gap-x-6 gap-y-4">
+            <div class="w-14 h-14 rounded-full bg-[#ffffff69]"></div>
+            <div class="w-14 h-14 rounded-full bg-[#ffffff69]"></div>
+            <div class="w-14 h-14 rounded-full bg-[#ffffff69]"></div>
+            <div class="w-14 h-14 rounded-full bg-[#ffffff69]"></div>
+            <div class="w-14 h-14 rounded-full bg-[#ffffff69]"></div>
+            <div class="w-14 h-14 rounded-full bg-[#ffffff69]"></div>
+          </div>
+          <div class="flex flex-col justify-cengter aligns-center">
+            <div class="flex justify-between text-[#034e46]">
+              <div class="z-20 flex flex-col">
+                <p class="font-semibold text-lg">
+                  Today's Choise
+                </p>
+                <p class="font-bold mt-4 text-2xl">
+                  Premium Quality Fruits
+                </p>
+              </div>
+              <div class="flex gap-5 items-center text-[#034e46]">
+                <div class="border-2 p-3 rounded-full w-14 h-14 flex items-center justify-center border-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8 .4 34.3z"/></svg>
+                </div>
+                <div class="border-2 p-3 rounded-full w-14 h-14 flex items-center justify-center border-black">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center aligns-center">
+              <img src="rb_29364.png" alt="" class="w-[88%]	rotate-[20deg]" style="filter: drop-shadow(0 0 0.75rem crimson);">
+            </div>
+            <div class="flex aligns-center justify-center">
+              <button class="text-[#034e46] rounded-3xl border-[#034e46] border px-8 py-2 hover:bg-[#034e46] hover:text-[#ffcb44] duration-75	">Explore Menu</button>
+            </div>
 
+          </div>
         </div> 
     </div>
   </div>
+  <div class="container mx-auto px-4 py-3 mt-[60px] text-black">
+    <div class="flex items-center justify-center flex-col gap-y-4">
+      <p class="text-normal font-semibold">Service</p>
+      <p class="text-3xl font-bold">What We Serve Besides</p>
+      <p class="text-3xl font-bold">Delicious Jus</p>
+      <p class="text-center mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quae earum illo nemo architecto ipsa, quod sapiente praesentium facilis fugit? Sed accusamus rerum quibusdam molestiae deserunt aspernatur alias, aperiam nulla suscipit perspiciatis consectetur temporibus consequuntur error tenetur ea nesciunt maxime excepturi vero cupiditate soluta! Distinctio aliquam animi nulla voluptatibus. Qui!</p>
+    </div>
+    <div class="grid grid-cols-4 mt-10 items-center justify-center justify-self-center	gap-20">
+      <div class="flex items-cente flex-col">
+        <div class="rounded-full w-56 h-56 overflow-hidden">
+          <img src="fast-order.jpg" alt="" class="object-cover w-full h-full">
+        </div>
+        <p class="text-center mt-4 font-semibold text-lg">Fast Delivery</p>
+      </div>
+      <div class="flex items-cente flex-col">
+        <div class="rounded-full w-56 h-56 overflow-hidden">
+          <img src="order.jpg" alt="" class="object-cover w-full h-full">
+        </div>
+        <p class="text-center mt-4 font-semibold text-lg">Easy to Order</p>
+      </div>
+      <div class="flex items-cente flex-col">
+        <div class="rounded-full w-56 h-56 overflow-hidden  bg-[#034e46]">
+          <img src="fresh.png" alt="" class="object-cover w-full h-full">
+        </div>
+        <p class="text-center mt-4 font-semibold text-lg">Fresh ingredients</p>
+      </div>
+      <div class="flex items-cente flex-col">
+        <div class="rounded-full w-56 h-56 overflow-hidden">
+          <img src="price.jpg" alt="" class="object-cover w-full h-full">
+        </div>
+        <p class="text-center mt-4 font-semibold text-lg">Affrodable Price</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-3 mt-[60px] text-black">
+    <div class="flex items-center justify-center flex-col gap-y-4">
+      <p class="text-normal font-semibold">Menu</p>
+      <p class="text-3xl font-bold">What are you craving of?</p>
+    </div>
+    <div class="grid grid-cols-12 gap-4 mt-10">
+      <!-- Promo Section -->
+      <div class="col-span-12 md:col-span-4 bg-green-900 text-white rounded-lg px-6 pt-6 flex items-center justfy-center flex-col">
+        <h2 class="text-2xl font-bold text-yellow-400 mb-4">Today's Promo</h2>
+        <p class="text-center">
+          Enjoy special promos from us, get several menus for the price of one menu.
+        </p>
+        <img
+          class="w-[70%] rotate-[10deg]"
+          src="rb_23665.png"
+          alt="Promo Image"
+          style="filter: drop-shadow(0 0 0.75rem #1289d8);"
+        />
+      </div>
+      <!-- Menu Items -->
+      <div class="col-span-12 md:col-span-8"> 
+        <div class="flex flex-col gap-4 overflow-x-auto custom-scrollbar">
+          <div class="flex gap-4">
+            <!-- Card Item -->
+            <div class="flex-shrink-0 w-64 bg-white rounded-lg shadow p-2 relative flex gap-2">
+              <div class="w-[34%] h-full rounded-lg  overflow-hidden">
+                <img src="juce-avocado.jpg" alt="" class="object-cover">
+              </div>
+              <div class="flex flex-col gap-y-3">
+                <h3 class="font-semibold text-base">Juice Avocadi</h3>
+                <p class="text-green-600 font-bold mb-2">$13</p>
+
+              </div>
+              <button
+                class="bg-[#034e46] text-white px-3 py-1   rounded-full hover:bg-green-700 absolute bottom-3 right-3"
+              >
+                +
+              </button>
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white rounded-lg shadow p-2 relative flex gap-2">
+              <div class="w-[34%] h-full rounded-lg  overflow-hidden">
+                <img src="orange.jpg" alt="" class="object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-y-3">
+                <h3 class="font-semibold text-base">Juice Orange</h3>
+                <p class="text-green-600 font-bold mb-2">$13</p>
+
+              </div>
+              <button
+                class="bg-[#034e46] text-white px-3 py-1   rounded-full hover:bg-green-700 absolute bottom-3 right-3"
+              >
+                +
+              </button>
+            </div>
+            <div class="flex-shrink-0 w-64 bg-white rounded-lg shadow p-2 flex relative">
+              <div class="w-[34%] h-full rounded-lg  overflow-hidden">
+                <img src="kiwi.jpg" alt="" class="object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-y-3">
+                <h3 class="font-semibold text-base">Juice Kiwi</h3>
+                <p class="text-green-600 font-bold mb-2">$13</p>
+
+              </div>
+              <button
+                class="bg-[#034e46] text-white px-3 py-1   rounded-full hover:bg-green-700 absolute bottom-3 right-3"
+              >
+                +
+              </button>
+            </div>
+            
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-64 bg-white rounded-lg shadow p-2 flex relative">
+              <div class="w-[34%] h-full rounded-lg  overflow-hidden">
+                <img src="banaan.jpg" alt="" class="object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-y-3">
+                <h3 class="font-semibold text-base">Juice Banana</h3>
+                <p class="text-green-600 font-bold mb-2">$13</p>
+
+              </div>
+              <button
+                class="bg-[#034e46] text-white px-3 py-1   rounded-full hover:bg-green-700 absolute bottom-3 right-3"
+              >
+                +
+              </button>
+            </div>
+
+            <!-- Card Item -->
+            <!-- <div class="flex-shrink-0 bg-white rounded-lg shadow p-4 w-1/3">
+              <img
+                src="menu1.jpg"
+                alt="American Special Salad"
+                class="w-full h-32 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-center font-medium">American Special Salad</h3>
+              <p class="text-green-600 font-bold mb-2">$13</p>
+              <button
+                class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+              >
+                +
+              </button>
+            </div> -->
+          </div>
+          <div class="flex gap-4">
+            <!-- Card Item -->
+            <!-- <div class="flex-shrink-0 bg-white rounded-lg shadow p-4 w-1/3">
+              <img
+                src="menu1.jpg"
+                alt="American Special Salad"
+                class="w-full h-32 object-cover rounded-md mb-4"
+              />
+              <h3 class="text-center font-medium">American Special Salad</h3>
+              <p class="text-green-600 font-bold mb-2">$13</p>
+              <button
+                class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+              >
+                +
+              </button>
+            </div> -->
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="relative">
+    <!-- Bagian Kiri -->
+    <div class="w-[50%] h-[450px] absolute bg-gradient-to-r from-yellow-400 via-yellow-400 to-transparent p-8 flex flex-col justify-center">
+      <div class="w-[50%]">
+        <h2 class="text-sm font-semibold text-gray-800">Outlets</h2>
+        <h1 class="text-4xl font-bold text-gray-900 mt-2">Find Us Near You</h1>
+        <p class="text-gray-700 mt-4">
+          The number one restaurant you are looking for to quench your hunger or just want to taste delicious things.
+        </p>
+        <button class="bg-[#034e46] text-white px-6 py-2  rounded-3xl mt-6">
+          Explore outlets &rarr;
+        </button>
+      </div>
+    </div>
+  
+    <!-- Bagian Kanan -->
+    <div class="w-100 bg-white">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507461.5245152676!2d106.56473995625002!3d-6.452641878475313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c175562a32a3%3A0x8cce62bf5b8baa08!2sCibinong%20City%20Mall!5e0!3m2!1sen!2sid!4v1733973721062!5m2!1sen!2sid" class="w-full"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <img src="https://via.placeholder.com/800x600" alt="Map" class="w-full h-full object-cover"> -->
+    </div>
+  </div>
+  
 </body>
 </html>
